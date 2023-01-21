@@ -21,7 +21,6 @@
         transition: all 0.5s;
         &:hover {
             color: white;
-            opacity: 0.7;
         }
         img {
             margin-left: 17px;
@@ -31,49 +30,160 @@
     }
 
     &__collection {
+        margin-top: 47px;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
     }
 
     &__collection-item {
+        &:hover {
+            transform: scale(1.005);
+        }
     }
 
     &__img {
     }
-}
-.profile-info {
-    &__title {
-    }
 
-    &__profile {
-    }
+    .profile-info {
+        width: 100%;
+        height: 236px;
+        padding: 36px 27px 26px 31px;
+        display: grid;
+        grid-template-columns: 210px 1fr;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.1) -1.52%,
+            rgba(255, 255, 255, 0.024) 104.35%
+        );
+        backdrop-filter: blur(39.6002px);
+        &__title {
+            font-family: 'Rajdhani';
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 46px;
+        }
 
-    &__name {
-    }
+        &__profile {
+            width: 158px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 37px;
+                height: 37px;
+            }
+        }
 
-    &__check {
-    }
+        &__name {
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 46px;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
 
-    &__reserve {
-    }
+        &__check {
+            img {
+                width: 16px;
+                height: 17px;
+            }
+        }
 
-    &__price {
-    }
+        &__reserve {
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 46px;
+            opacity: 0.7;
+        }
 
-    &__timer-text {
-    }
+        &__price {
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron';
+            font-weight: 700;
+            font-size: 13px;
+            transform: translateX(-5px);
+            span {
+                margin-left: 7px;
+                font-family: 'Rajdhani';
+                font-weight: 400;
+                font-size: 14px;
+                opacity: 0.7;
+            }
+        }
 
-    &__timer {
-    }
+        &__timer-text {
+            margin-left: 10px;
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 46px;
+            opacity: 0.7;
+        }
 
-    &__timer-hours {
-    }
+        &__timer {
+            margin-left: 10px;
+            width: 143px;
+            display: flex;
+            justify-content: space-between;
+            &-hours {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Rajdhani';
+                font-weight: 600;
+                font-size: 23px;
+            }
+            &-minutes {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Rajdhani';
+                font-weight: 600;
+                font-size: 23px;
+            }
+            &-secundes {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Rajdhani';
+                font-weight: 600;
+                font-size: 23px;
+            }
+            span {
+                font-family: 'Rajdhani';
+                font-weight: 500;
+                font-size: 14px;
+                opacity: 0.7;
+            }
+        }
 
-    &__timer-minutes {
-    }
-
-    &__timer-secundes {
-    }
-
-    &__btn {
+        &__btn {
+            @include btn;
+            @include btn-before;
+            margin-top: 25px;
+            padding: 10px 0 10px 13px;
+            width: 156px;
+            height: 49px;
+            font-family: 'Rajdhani';
+            font-weight: 600;
+            font-size: 23px;
+            &::before {
+                width: 160px;
+                height: 53px;
+                top: -2px;
+                left: -2px;
+                animation: none;
+            }
+            img {
+                margin-left: 5px;
+                width: 32px;
+                height: 12px;
+            }
+        }
     }
 }
 

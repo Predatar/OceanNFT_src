@@ -51,6 +51,8 @@
 
     &__btn {
         @include btn;
+        @include btn-before;
+        @include btn-after;
         width: 250px;
         height: 64px;
         clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
@@ -253,34 +255,24 @@
         }
 
         &__btn {
+            @include btn;
+            @include btn-before;
             margin-top: 10px;
             width: 120px;
             height: 38px;
-            position: relative;
-            border: none;
             border-radius: 2px;
-            background: linear-gradient(
-                92.23deg,
-                #ff56f6 21.43%,
-                #b936ee 50.63%,
-                #3bace2 100%,
-                #406aff 117.04%
-            );
             font-family: 'Rajdhani';
             font-weight: 600;
             font-size: 18px;
-            &::after {
-                content: '';
+            &::before {
                 width: 124px;
                 height: 42px;
-                position: absolute;
-            }
-            &::after {
                 top: -2px;
                 left: -2px;
                 z-index: -1;
                 border-radius: 2px;
                 background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+                animation: none;
             }
             img {
                 width: 24px;

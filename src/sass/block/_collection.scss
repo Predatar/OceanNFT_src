@@ -1,0 +1,91 @@
+.collection {
+    padding: 161px 144px 0 109px;
+    display: grid;
+    grid-template-columns: 780px 436px;
+    gap: 130px;
+
+    &__top {
+        margin-top: 50px;
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    &__group {
+        margin-top: 47px;
+        width: 780px;
+        height: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        gap: 43px;
+        &-item {
+            width: 368px;
+            height: 98px;
+            padding: 32px 0;
+            position: relative;
+            font-family: 'Orbitron';
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 33px;
+            text-align: center;
+            border-width: 4px;
+            border-style: solid;
+            border-image: linear-gradient(
+                    to right,
+                    rgba(255, 166, 250, 0.3) 47.49%,
+                    rgba(60, 121, 213, 0.3) 98.81%
+                )
+                1;
+            span {
+                opacity: 0.5;
+            }
+            &:hover {
+                border-radius: 2px;
+                background: linear-gradient(
+                        92.23deg,
+                        #ff56f6 21.43%,
+                        #b936ee 50.63%,
+                        #3bace2 100%,
+                        #406aff 117.04%
+                    )
+                    center center/cover no-repeat;
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__link {
+        margin-top: 43px;
+        display: block;
+        text-align: end;
+        text-decoration: none;
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        &:hover {
+            color: white;
+        }
+        img {
+            width: 52px;
+            height: 16px;
+            margin-left: 16px;
+            animation: shakeArrow 1s linear alternate infinite;
+        }
+    }
+    &__img {
+    }
+}
+@keyframes shakeArrow {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-10px);
+    }
+}

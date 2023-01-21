@@ -1,20 +1,31 @@
 @mixin btn {
     border: none;
     position: relative;
-    color: white;
-    &::before,
+    background: linear-gradient(
+                92.23deg,
+                #ff56f6 21.43%,
+                #b936ee 50.63%,
+                #3bace2 100%,
+                #406aff 117.04%
+            );
+}
+@mixin btn-before{
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(272.52deg, #ffa6fa 35%, #3c79d5 98.81%);
+        z-index: -2;
+        animation: rotate 3s linear infinite alternate;
+    }
+}
+@mixin btn-after {
     &::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-    }
-    &::before {
-        background: linear-gradient(90deg, #ffa6fa 35%, #3c79d5 98.81%);
-        z-index: -2;
-        animation: rotate 3s linear infinite alternate;
-    }
-    &::after {
         background: linear-gradient(
             -90deg,
             #ff56f6 21.43%,
