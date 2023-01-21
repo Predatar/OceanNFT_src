@@ -1,0 +1,46 @@
+.btn {
+    width: 250px;
+    height: 64px;
+    clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+    border: none;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+        background: linear-gradient(90deg, #FFA6FA 35%, #3C79D5 98.81%);
+        top: -118px;
+        left: -25px;
+        z-index: -2;
+        animation: rotate 5s linear infinite;
+    }
+    &::after {
+        background: linear-gradient(
+            -90deg,
+            #ff56f6 21.43%,
+            #b936ee 50.63%,
+            #3bace2 100%,
+            #406aff 117.04%
+        );
+        content: '';
+        position: absolute;
+        width: 246px;
+        height: 60px;
+        top: 2px;
+        left: 2px;
+        z-index: -1;
+        clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
