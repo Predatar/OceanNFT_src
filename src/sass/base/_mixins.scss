@@ -2,14 +2,15 @@
     border: none;
     position: relative;
     background: linear-gradient(
-                92.23deg,
-                #ff56f6 21.43%,
-                #b936ee 50.63%,
-                #3bace2 100%,
-                #406aff 117.04%
-            );
+            92.23deg,
+            #ff56f6 21.43%,
+            #b936ee 50.63%,
+            #3bace2 100%,
+            #406aff 117.04%
+        )
+        center center/cover no-repeat;
 }
-@mixin btn-before{
+@mixin btn-before {
     &::before {
         content: '';
         position: absolute;

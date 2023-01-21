@@ -15,7 +15,7 @@
     &__top-link {
         font-family: 'Orbitron';
         font-weight: 700;
-        font-size: 26.531px;
+        font-size: 27px;
         color: white;
         text-decoration: none;
         transition: all 0.5s;
@@ -184,14 +184,5 @@
                 height: 12px;
             }
         }
-    }
-}
-
-@keyframes shakeArrow {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(-10px);
     }
 }

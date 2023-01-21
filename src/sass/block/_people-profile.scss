@@ -1,0 +1,169 @@
+.people-profile {
+    padding: 160px 106px 0 109px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top-text {
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 27px;
+    }
+
+    &__top-link {
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 27px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+        img {
+            margin-left: 17px;
+            width: 52px;
+            height: 27px;
+            animation: shakeArrow 1s linear infinite alternate;
+        }
+    }
+
+    &__group {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__group-item {
+        width: 438px;
+        height: 565px;
+        position: relative;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.1) -1.52%,
+            rgba(255, 255, 255, 0.024) 104.35%
+        );
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(
+            145.77deg,
+            rgba(255, 255, 255, 0.28) 0%,
+            rgba(255, 255, 255, 0) 105.76%
+        ) 1;
+        &:hover {
+            transform: scale(1.005);
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        height: 206px;
+        background: url('../img/profile_bg.png') center center/cover no-repeat;
+        img {
+            position: absolute;
+            top: 28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__info {
+        padding: 50px 40px 40px;
+    }
+
+    &__name {
+        font-family: 'Rajdhani';
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        font-family: 'Rajdhani';
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffb1ee;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: #ffb1ee;
+        }
+        img {
+            width: 16px;
+            height: 17px;
+        }
+    }
+
+    &__data {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__folowers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 32px;
+        span {
+            font-family: 'Rajdhani';
+            font-weight: 500;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+    }
+
+    &__following {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 32px;
+        span {
+            font-family: 'Rajdhani';
+            font-weight: 500;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+    }
+
+    &__artworks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 32px;
+        span {
+            font-family: 'Rajdhani';
+            font-weight: 500;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+    }
+
+    &__btn {
+        @include btn;
+        @include btn-before;
+        margin: 43px auto 0;
+        width: 230px;
+        height: 51px;
+        display: block;
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        &::before {
+            width: 234px;
+            height: 55px;
+            top: -2px;
+            left: -2px;
+            animation: none;
+        }
+    }
+}
