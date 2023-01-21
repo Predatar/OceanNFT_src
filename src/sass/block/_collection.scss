@@ -1,8 +1,7 @@
-.collection {
+.category {
     padding: 161px 144px 0 109px;
     display: grid;
-    grid-template-columns: 780px 436px;
-    gap: 130px;
+    grid-template-columns: 780px minmax(130px, 1fr) 436px;
 
     &__top {
         margin-top: 50px;
@@ -79,6 +78,7 @@
         }
     }
     &__img {
+        grid-column: 3/4;
     }
 }
 @keyframes shakeArrow {
