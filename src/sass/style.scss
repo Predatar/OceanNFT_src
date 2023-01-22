@@ -16,6 +16,7 @@ body {
     background: url('../img/background.png') center center/cover no-repeat;
 }
 
+@import './block/burger';
 @import './block/introduction';
 @import './block/partners';
 @import './block/rating';
