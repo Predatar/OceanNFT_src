@@ -1,0 +1,75 @@
+.about-nft {
+    margin-top: 160px;
+    width: 100%;
+    height: 556px;
+    background: url('../img/unsplash_KJhfznmFt-Q.png') center center/cover no-repeat;
+    position: relative;
+
+    &__info {
+        width: 577px;
+        height: 473px;
+        padding: 58px 48px 51px 71px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(72.8013px);
+        position: absolute;
+        right: 141px;
+        bottom: -133px;
+        border-radius: 3px;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(113.62deg, #616161 0%, rgba(255, 255, 255, 0) 96.25%) 1;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 800;
+        font-size: 45px;
+    }
+
+    &__text {
+        margin-top: 18px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    &__references {
+        margin-top: 45px;
+        display: flex;
+    }
+
+    &__link {
+        margin-right: 45px;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            opacity: 0.9;
+        }
+    }
+
+    &__watch {
+        width: 128px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            opacity: 0.9;
+        }
+        img {
+            width: 12px;
+            height: 18px;
+        }
+    }
+}
