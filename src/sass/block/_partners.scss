@@ -5,7 +5,83 @@
     align-items: end;
     flex-wrap: wrap;
     &__partner {
+        padding: 10px 0;
         img {
+        }
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .partners {
+        padding: 0 30px;
+        justify-content: space-around;
+        &__partner {
+            padding: 5px 0;
+            img {
+                height: 25px;
+            }
+            &:last-child {
+                img {
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 426px) and (max-width: 575px) {
+    .partners {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        justify-content: space-around;
+        &__partner {
+            padding: 5px 10px;
+            img {
+                height: 25px;
+            }
+            &:last-child {
+                img {
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .partners {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        justify-content: space-around;
+        &__partner {
+            padding: 5px 10px;
+            img {
+                height: 30px;
+            }
+            &:last-child {
+                img {
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .partners {
+        padding: 0 30px;
+        justify-content: space-around;
+        &__partner {
+            padding: 10px 10px;
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1484px) {
+    .partners {
+        justify-content: space-around;
+        &__partner {
+            padding: 10px 20px;
         }
     }
 }

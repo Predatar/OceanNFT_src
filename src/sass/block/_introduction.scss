@@ -671,7 +671,7 @@
         }
 
         &__title {
-            width: 370px;
+            width: 360px;
             height: auto;
             font-size: 48px;
         }
@@ -685,18 +685,25 @@
         &__action {
             margin: 40px 0;
             width: 360px;
+            justify-content: space-around;
             &-link {
                 font-size: 18px;
             }
         }
 
         &__btn {
-            width: 200px;
+            width: 150px;
             height: 58px;
-            font-size: 18px;
+            font-size: 16px;
+            padding-left: 0;
             &::after {
-                width: 196px;
+                width: 146px;
                 height: 54px;
+            }
+            img {
+                margin-left: 0;
+                width: 27px;
+                height: 10px;
             }
         }
 
@@ -711,6 +718,9 @@
 
         &__img {
             margin-top: 30px;
+            img {
+                width: 350px;
+            }
         }
     }
     .header {
@@ -731,7 +741,7 @@
         }
     }
 }
-@media (min-width: 1025px) and (max-width: 1470px) {
+@media (min-width: 1025px) and (max-width: 1484px) {
     .introduction {
         padding: 27px 34px;
 
@@ -741,15 +751,14 @@
         }
 
         &__title {
-            min-width: auto;
-            max-width: 850px;
+            width: auto;
+            font-size: 70px;
             height: auto;
-            font-size: 48px;
         }
 
         &__subtitle {
             margin-top: 20px;
-            width: 350px;
+            width: 400px;
             font-size: 20px;
         }
 
