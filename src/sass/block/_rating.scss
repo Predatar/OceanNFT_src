@@ -1,7 +1,11 @@
 .rating {
     padding: 217px 107px 0 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__top {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -31,9 +35,9 @@
 
     &__collection {
         margin-top: 47px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        // flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     &__collection-item {
@@ -43,6 +47,41 @@
     }
 
     &__img {
+    }
+
+    &__btn {
+        @include btn;
+        @include btn-before;
+        @include btn-after;
+        display: none;
+        margin: 40px auto;
+        width: 133px;
+        height: 34px;
+        clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        &::before {
+            width: 300px;
+            height: 300px;
+            clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+            top: -118px;
+            left: -25px;
+            animation: none;
+        }
+        &::after {
+            width: 129px;
+            height: 30px;
+            background: #251145;
+            clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+            top: 2px;
+            left: 2px;
+        }
+        img {
+            width: 28px;
+            height: 8px;
+        }
     }
 
     .profile-info {
@@ -57,6 +96,15 @@
             rgba(255, 255, 255, 0.024) 104.35%
         );
         backdrop-filter: blur(39.6002px);
+        border-style: solid;
+        border-width: 2px;
+        border-image: linear-gradient(
+                145.77deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 105.76%
+            )
+            1;
+
         &__title {
             font-family: 'Rajdhani';
             font-weight: 700;
@@ -182,6 +230,561 @@
                 margin-left: 5px;
                 width: 32px;
                 height: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .rating {
+        padding: 90px 27px 0 25px !important;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 16px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__collection {
+            margin-top: 32px;
+            // TODO убрать скрол
+            overflow: scroll !important;
+            width: 323px !important;
+            justify-content: space-between !important;
+            &-item {
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__btn {
+            display: block;
+        }
+    }
+    .profile-info {
+        width: 100% !important;
+        padding: 25px 19px 18px 21px !important;
+        height: 163px !important;
+        grid-template-columns: 160px 1fr !important;
+        &__title {
+            font-size: 14px !important;
+            line-height: 27px !important;
+        }
+
+        &__profile {
+            width: 110px !important;
+        }
+
+        &__name {
+            font-size: 12px !important;
+            line-height: 27px !important;
+        }
+
+        &__check {
+        }
+
+        &__reserve {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__price {
+            font-size: 8px !important;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__timer-text {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__timer {
+            width: 100px !important;
+            &-hours {
+                font-size: 14px !important;
+            }
+            &-minutes {
+                font-size: 14px !important;
+            }
+            &-secundes {
+                font-size: 14px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__btn {
+            margin-top: 18px !important;
+            margin-left: 8px !important;
+            width: 108px !important;
+            height: 34px !important;
+            font-size: 14px !important;
+            padding: 0 !important;
+            &::before {
+                width: 112px !important;
+                height: 38px !important;
+            }
+        }
+    }
+}
+@media (min-width: 426px) and (max-width: 575px) {
+    .rating {
+        padding: 90px 27px 0 25px !important;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 16px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__collection {
+            margin-top: 32px;
+            // TODO убрать скрол
+            overflow: scroll !important;
+            width: 323px !important;
+            justify-content: space-between !important;
+            &-item {
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__btn {
+            display: block;
+        }
+    }
+    .profile-info {
+        width: 100% !important;
+        padding: 25px 19px 18px 21px !important;
+        height: 163px !important;
+        grid-template-columns: 160px 1fr !important;
+        &__title {
+            font-size: 14px !important;
+            line-height: 27px !important;
+        }
+
+        &__profile {
+            width: 110px !important;
+        }
+
+        &__name {
+            font-size: 12px !important;
+            line-height: 27px !important;
+        }
+
+        &__check {
+        }
+
+        &__reserve {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__price {
+            font-size: 8px !important;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__timer-text {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__timer {
+            width: 100px !important;
+            &-hours {
+                font-size: 14px !important;
+            }
+            &-minutes {
+                font-size: 14px !important;
+            }
+            &-secundes {
+                font-size: 14px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__btn {
+            margin-top: 18px !important;
+            margin-left: 8px !important;
+            width: 108px !important;
+            height: 34px !important;
+            font-size: 14px !important;
+            padding: 0 !important;
+            &::before {
+                width: 112px !important;
+                height: 38px !important;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .rating {
+        padding: 90px 50px 0 !important;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 16px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__collection {
+            margin-top: 32px;
+            // TODO убрать скрол
+            overflow: scroll !important;
+            width: 323px !important;
+            justify-content: space-between !important;
+            &-item {
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__btn {
+            display: block;
+        }
+    }
+    .profile-info {
+        width: 100% !important;
+        padding: 25px 19px 18px 21px !important;
+        height: 163px !important;
+        grid-template-columns: 160px 1fr !important;
+        &__title {
+            font-size: 14px !important;
+            line-height: 27px !important;
+        }
+
+        &__profile {
+            width: 110px !important;
+        }
+
+        &__name {
+            font-size: 12px !important;
+            line-height: 27px !important;
+        }
+
+        &__check {
+        }
+
+        &__reserve {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__price {
+            font-size: 8px !important;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__timer-text {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__timer {
+            width: 100px !important;
+            &-hours {
+                font-size: 14px !important;
+            }
+            &-minutes {
+                font-size: 14px !important;
+            }
+            &-secundes {
+                font-size: 14px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__btn {
+            margin-top: 18px !important;
+            margin-left: 8px !important;
+            width: 108px !important;
+            height: 34px !important;
+            font-size: 14px !important;
+            padding: 0 !important;
+            &::before {
+                width: 112px !important;
+                height: 38px !important;
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .rating {
+        padding: 90px 50px 0 !important;
+
+        &__top-text {
+            font-size: 16px;
+        }
+
+        &__top-link {
+            font-size: 16px;
+            img {
+                width: 32px;
+                height: 10px;
+            }
+        }
+
+        &__collection {
+            margin-top: 32px;
+            // TODO убрать скрол
+            overflow: scroll !important;
+            width: 646px !important;
+            justify-content: space-between !important;
+            &-item {
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .profile-info {
+        width: 100% !important;
+        padding: 25px 19px 18px 21px !important;
+        height: 163px !important;
+        grid-template-columns: 160px 1fr !important;
+        &__title {
+            font-size: 14px !important;
+            line-height: 27px !important;
+        }
+
+        &__profile {
+            width: 110px !important;
+        }
+
+        &__name {
+            font-size: 12px !important;
+            line-height: 27px !important;
+        }
+
+        &__check {
+        }
+
+        &__reserve {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__price {
+            font-size: 8px !important;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__timer-text {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__timer {
+            width: 100px !important;
+            &-hours {
+                font-size: 14px !important;
+            }
+            &-minutes {
+                font-size: 14px !important;
+            }
+            &-secundes {
+                font-size: 14px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__btn {
+            margin-top: 18px !important;
+            margin-left: 8px !important;
+            width: 108px !important;
+            height: 34px !important;
+            font-size: 14px !important;
+            padding: 0 !important;
+            &::before {
+                width: 112px !important;
+                height: 38px !important;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1484px) {
+    .rating {
+        padding: 90px 50px 0 !important;
+
+        &__top-text {
+            font-size: 16px;
+        }
+
+        &__top-link {
+            font-size: 16px;
+            img {
+                width: 32px;
+                height: 10px;
+            }
+        }
+
+        &__collection {
+            margin-top: 32px;
+            width: 975px;
+            &-item {
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .profile-info {
+        width: 100% !important;
+        padding: 25px 19px 18px 21px !important;
+        height: 163px !important;
+        grid-template-columns: 160px 1fr !important;
+        &__title {
+            font-size: 14px !important;
+            line-height: 27px !important;
+        }
+
+        &__profile {
+            width: 110px !important;
+        }
+
+        &__name {
+            font-size: 12px !important;
+            line-height: 27px !important;
+        }
+
+        &__check {
+        }
+
+        &__reserve {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__price {
+            font-size: 8px !important;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__timer-text {
+            font-size: 9px !important;
+            line-height: 27px !important;
+        }
+
+        &__timer {
+            width: 100px !important;
+            &-hours {
+                font-size: 14px !important;
+            }
+            &-minutes {
+                font-size: 14px !important;
+            }
+            &-secundes {
+                font-size: 14px !important;
+            }
+            span {
+                font-size: 9px !important;
+            }
+        }
+
+        &__btn {
+            margin-top: 18px !important;
+            margin-left: 8px !important;
+            width: 108px !important;
+            height: 34px !important;
+            font-size: 14px !important;
+            padding: 0 !important;
+            &::before {
+                width: 112px !important;
+                height: 38px !important;
             }
         }
     }
