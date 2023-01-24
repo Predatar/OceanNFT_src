@@ -47,10 +47,11 @@
         border-width: 3px;
         border-style: solid;
         border-image: linear-gradient(
-            145.77deg,
-            rgba(255, 255, 255, 0.28) 0%,
-            rgba(255, 255, 255, 0) 105.76%
-        ) 1;
+                145.77deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 105.76%
+            )
+            1;
         &:hover {
             transform: scale(1.005);
         }
@@ -164,6 +165,236 @@
             top: -2px;
             left: -2px;
             animation: none;
+        }
+    }
+    &__btn-exp {
+        @include btn;
+        @include btn-before;
+        @include btn-after;
+        display: none;
+        margin: 40px auto;
+        width: 133px;
+        height: 34px;
+        clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        &::before {
+            width: 200px;
+            height: 200px;
+            clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+            top: -118px;
+            left: -25px;
+            animation: none;
+        }
+        &::after {
+            width: 129px;
+            height: 30px;
+            background: #251145;
+            clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
+            top: 2px;
+            left: 2px;
+        }
+        img {
+            width: 28px;
+            height: 8px;
+        }
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .people-profile {
+        padding: 110px 46px 0 25px;
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+        }
+
+        &__group-item {
+            width: 303px;
+            height: 391px;
+        }
+
+        &__logo {
+            height: 142px;
+            img {
+                top: 33%;
+                width: 112px;
+                height: 112px;
+            }
+        }
+
+        &__info {
+            padding: 52px 27px 28px;
+        }
+
+        &__name {
+            font-size: 17px;
+        }
+
+        &__link {
+            font-size: 14px;
+            img {
+                width: 11px;
+                height: 12px;
+            }
+        }
+
+        &__data {
+            margin-top: 5px;
+        }
+
+        &__folowers {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__following {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__artworks {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__btn {
+            margin-top: 20px;
+            width: 162px;
+            height: 36px;
+            &::before {
+                width: 166px;
+                height: 40px;
+            }
+            &-exp {
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: 426px) and (max-width: 575px) {
+    .people-profile {
+        padding: 110px 25px 0;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 19px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+            align-items: center;
+        }
+        &__btn {
+            &-exp {
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .people-profile {
+        padding: 110px 25px 0;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 19px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+        }
+        &__btn {
+            &-exp {
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .people-profile {
+        padding: 110px 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 19px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+            align-self: center;
+        }
+        &__btn {
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1484px) {
+    .people-profile {
+        padding: 110px 25px 0;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 19px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+        }
+        &__btn {
         }
     }
 }

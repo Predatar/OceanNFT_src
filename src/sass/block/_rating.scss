@@ -41,12 +41,17 @@
     }
 
     &__collection-item {
+        width: 438px;
+        padding: 0 5px;
         &:hover {
             transform: scale(1.005);
         }
     }
 
     &__img {
+        img {
+            width: 100%;
+        }
     }
 
     &__btn {
@@ -63,8 +68,8 @@
         font-size: 12px;
         line-height: 15px;
         &::before {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             clip-path: polygon(18% 0, 100% 0, 100% 81%, 83% 100%, 0 100%, 0 17%);
             top: -118px;
             left: -25px;
@@ -237,7 +242,7 @@
 
 @media (min-width: 375px) and (max-width: 425px) {
     .rating {
-        padding: 90px 27px 0 25px !important;
+        padding: 108px 45px 0 25px;
 
         &__top {
             justify-content: start;
@@ -253,14 +258,11 @@
 
         &__collection {
             margin-top: 32px;
-            // TODO убрать скрол
-            overflow: scroll !important;
-            width: 323px !important;
+
             justify-content: space-between !important;
             &-item {
-                &:last-child {
-                    margin: 0;
-                }
+                padding: 0;
+                width: 304px;
             }
         }
 
@@ -278,7 +280,7 @@
         width: 100% !important;
         padding: 25px 19px 18px 21px !important;
         height: 163px !important;
-        grid-template-columns: 160px 1fr !important;
+        grid-template-columns: 130px 120px !important;
         &__title {
             font-size: 14px !important;
             line-height: 27px !important;
@@ -335,7 +337,7 @@
 
         &__btn {
             margin-top: 18px !important;
-            margin-left: 8px !important;
+            margin-left: 5px !important;
             width: 108px !important;
             height: 34px !important;
             font-size: 14px !important;
