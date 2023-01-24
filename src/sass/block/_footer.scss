@@ -45,6 +45,10 @@
         }
     }
 
+    &__arrow {
+        display: none;
+    }
+
     &__market-place {
         width: 176px;
     }
@@ -69,6 +73,8 @@
         font-family: 'Inter';
         font-weight: 500;
         font-size: 20px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__list {
@@ -79,8 +85,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: all 0.5s;
         &-item {
-            
         }
     }
 
@@ -110,6 +116,7 @@
 
     &__license {
         margin-top: 27px;
+        margin-bottom: 42px;
         height: 27px;
         display: flex;
         justify-content: space-between;
@@ -142,7 +149,6 @@
         &:hover {
             color: white;
         }
-
     }
 
     &__policy {
@@ -156,7 +162,6 @@
         &:hover {
             color: white;
         }
-
     }
 
     &__sitemap {
@@ -172,4 +177,431 @@
     opacity: 0.2;
     width: 100%;
     height: 1.11px;
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .footer {
+        padding: 0 25px 97px;
+
+        &__wrapper {
+            padding: 30px 0 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 325px;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+
+        &__arrow {
+            display: block;
+        }
+
+        &__market-place {
+            width: 100%;
+        }
+
+        &__collectibles {
+            width: 100%;
+        }
+
+        &__support {
+            width: 100%;
+        }
+
+        &__legal {
+            width: 100%;
+        }
+
+        &__follow-us {
+            width: 100%;
+        }
+
+        &__list {
+            align-items: center;
+            overflow: hidden;
+            height: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__license {
+            margin: 0;
+            margin-top: 22px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        &__copyright {
+            margin-top: 37px;
+            text-align: center;
+        }
+
+        &__support-info {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__terms {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__policy {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__sitemap {
+            display: none;
+        }
+
+        .divider {
+            &__dissable {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 426px) and (max-width: 575px) {
+    .footer {
+        padding: 0 25px 97px;
+
+        &__wrapper {
+            padding: 30px 0 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 325px;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+
+        &__arrow {
+            display: block;
+        }
+
+        &__market-place {
+            width: 100%;
+        }
+
+        &__collectibles {
+            width: 100%;
+        }
+
+        &__support {
+            width: 100%;
+        }
+
+        &__legal {
+            width: 100%;
+        }
+
+        &__follow-us {
+            width: 100%;
+        }
+
+        &__list {
+            align-items: center;
+            overflow: hidden;
+            height: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__license {
+            margin: 0;
+            margin-top: 22px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        &__copyright {
+            margin-top: 37px;
+            text-align: center;
+        }
+
+        &__support-info {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__terms {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__policy {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__sitemap {
+            display: none;
+        }
+
+        .divider {
+            &__dissable {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .footer {
+        padding: 0 25px 97px;
+
+        &__wrapper {
+            padding: 30px 0 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 80%;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+
+        &__arrow {
+            display: block;
+        }
+
+        &__market-place {
+            width: 100%;
+        }
+
+        &__collectibles {
+            width: 100%;
+        }
+
+        &__support {
+            width: 100%;
+        }
+
+        &__legal {
+            width: 100%;
+        }
+
+        &__follow-us {
+            width: 100%;
+        }
+
+        &__list {
+            align-items: center;
+            overflow: hidden;
+            height: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__license {
+            margin: 0;
+            margin-top: 22px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        &__copyright {
+            margin-top: 37px;
+            text-align: center;
+        }
+
+        &__support-info {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__terms {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__policy {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__sitemap {
+            display: none;
+        }
+
+        .divider {
+            &__dissable {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        padding: 0 25px 97px;
+
+        &__wrapper {
+            padding: 30px 0 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 80%;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+
+        &__arrow {
+            display: block;
+        }
+
+        &__market-place {
+            width: 100%;
+        }
+
+        &__collectibles {
+            width: 100%;
+        }
+
+        &__support {
+            width: 100%;
+        }
+
+        &__legal {
+            width: 100%;
+        }
+
+        &__follow-us {
+            width: 100%;
+        }
+
+        &__list {
+            align-items: center;
+            overflow: hidden;
+            height: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__license {
+            margin: 0;
+            margin-top: 22px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        &__copyright {
+            margin-top: 37px;
+            text-align: center;
+        }
+
+        &__support-info {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__terms {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__policy {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__sitemap {
+            display: none;
+        }
+
+        .divider {
+            &__dissable {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1484px) {
+    .footer {
+        padding: 0 25px;
+
+        &__info {
+           min-width: 30%;
+           max-width: 338px;
+           margin-right: 5px;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+    }
 }
