@@ -6,9 +6,16 @@
     &__img {
         width: 699px;
         height: 290px;
+        border-radius: 5px;
+        img {
+            width: 100%;
+            height: 290px;
+            border-radius: 5px;
+        }
     }
 
     &__wrapper {
+        margin-left: 10px;
         width: 490px;
     }
 
@@ -21,6 +28,7 @@
 
     &__text {
         margin-top: 28px;
+        width: 490px;
         font-family: 'Inter';
         font-weight: 400;
         font-size: 20px;
@@ -61,6 +69,241 @@
     }
 }
 
-@media (min-width: 375px) {
-    
+@media (min-width: 375px) and (max-width: 425px) {
+    .subscribe {
+        flex-direction: column-reverse;
+        padding: 207px 25px 0;
+
+        &__img {
+            margin-top: 108px;
+            width: auto;
+            height: auto;
+            img {
+                width: 326px;
+                height: 380px;
+            }
+        }
+
+        &__wrapper {
+            width: auto;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 18px;
+            font-size: 13px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 10px;
+            padding: 9px 12px;
+        }
+
+        &__btn {
+            width: 95px;
+            height: 32px;
+            &::before {
+                width: 99px;
+                height: 36px;
+            }
+        }
+    }
+}
+@media (min-width: 426px) and (max-width: 575px) {
+    .subscribe {
+        flex-direction: column-reverse;
+        padding: 207px 25px 0;
+
+        &__img {
+            margin-top: 108px;
+            width: auto;
+            height: auto;
+            img {
+                height: 380px;
+            }
+        }
+
+        &__wrapper {
+            width: auto;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 12px;
+            padding: 10px 14px;
+        }
+
+        &__btn {
+            width: 99px;
+            height: 36px;
+            &::before {
+                width: 103px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .subscribe {
+        flex-direction: column-reverse;
+        padding: 207px 25px 0;
+
+        &__img {
+            margin-top: 88px;
+            width: auto;
+            height: auto;
+            img {
+                height: 380px;
+            }
+        }
+
+        &__wrapper {
+            width: auto;
+        }
+
+        &__title {
+            width: 100%;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 14px;
+            padding: 10px 14px;
+        }
+
+        &__btn {
+            width: 103px;
+            height: 40px;
+            &::before {
+                width: 107px;
+                height: 44px;
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .subscribe {
+        padding: 207px 25px 0;
+
+        &__img {
+            width: auto;
+            height: auto;
+            img {
+                height: 280px;
+            }
+        }
+
+        &__wrapper {
+            width: auto;
+            margin-left: 25px;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 14px;
+            padding: 10px 14px;
+        }
+
+        &__btn {
+            width: 103px;
+            height: 40px;
+            &::before {
+                width: 107px;
+                height: 44px;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1484px) {
+    .subscribe {
+        padding: 207px 25px 0;
+
+        &__img {
+            width: auto;
+            height: auto;
+            img {
+                height: 280px;
+            }
+        }
+
+        &__wrapper {
+            width: 450px;
+            margin-left: 25px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            width: 400px;
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 14px;
+            padding: 10px 14px;
+        }
+
+        &__btn {
+            width: 103px;
+            height: 40px;
+            &::before {
+                width: 107px;
+                height: 44px;
+            }
+        }
+    }
 }
