@@ -11,7 +11,6 @@
 }
 
 body {
-    // height: 6620px;
     position: relative;
     background: url('../img/background.png') center center/cover no-repeat;
 }
@@ -26,6 +25,7 @@ body {
 }
 
 @import './block/burger';
+@import './block/sidemenu';
 @import './block/introduction';
 @import './block/partners';
 @import './block/rating';

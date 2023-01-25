@@ -8,6 +8,22 @@
         text-align: center;
     }
 
+    select {
+        background: transparent;
+        border: none;
+        outline: 0;
+        color: #FF56F6;
+        option {
+            border: none;
+            outline: 0;
+            background: #211147;
+            color: #FF56F6;
+            &:focus {
+                color: #FF56F6;
+            }
+        }
+    }
+
     &__subtitle {
         width: 506px;
         margin: 23px auto 0;

@@ -289,7 +289,11 @@
         <button class="people-profile__btn-exp">Explore <img src="./icons/arrow.svg" alt="arrow"></button>
     </section>
     <section class="sellers">
-        <div class="sellers__title">Top Sellers this Month</div>
+        <div class="sellers__title">Top Sellers this <select>
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="month" selected>Month</option>
+            </select></div>
         <div class="sellers__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
             officia consequat duis enim minim mollit.</div>
         <div class="sellers__group">
@@ -574,6 +578,27 @@
             </div>
         </div>
     </footer>
+    <div class="sidemenu">
+        <div class="sidemenu__action">
+            <a href="#" class="sidemenu__cart">
+                <img src="./icons/cart.svg" alt="cart">
+            </a>
+            <a href="#" class="sidemenu__profile">
+                <img src="./icons/profile.svg" alt="profile">
+            </a>
+        </div>
+        <ul class="sidemenu__list">
+            <li class="sidemenu__list-item">
+                <a href="#">Market</a>
+            </li>
+            <li class="sidemenu__list-item">
+                <a href="#">Features</a>
+            </li>
+            <li class="sidemenu__list-item">
+                <a href="#">Community</a>
+            </li>
+        </ul>
+    </div>
     <script src="./js/bundle.js" defer></script>
 </body>
 

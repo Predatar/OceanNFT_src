@@ -5,7 +5,10 @@ window.addEventListener('DOMContentLoaded', () => {
         footerList = document.querySelectorAll('.footer__list'),
         timer_h = document.querySelectorAll('.profile-info__timer-hours span'),
         timer_m = document.querySelectorAll('.profile-info__timer-minutes span'),
-        timer_s = document.querySelectorAll('.profile-info__timer-seconds span');
+        timer_s = document.querySelectorAll('.profile-info__timer-seconds span'),
+        burger = document.querySelector('.burger'),
+        sidemenu = document.querySelector('.sidemenu');
+
     const deadline = new Date('2023', '01', '27');
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
@@ -42,13 +45,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    footerArrow.forEach((elem, i) => {
-        elem.addEventListener('click', () => {
-            elem.classList.toggle('rotate');
-            footerList[i].classList.toggle('show');
-        });
-    });
-
     function countDownTimer() {
         const diff = deadline - new Date();
         if (diff <= 0) {
@@ -70,5 +66,25 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    burger.addEventListener('click', () => {
+        if(document.querySelector('.burger input').checked){
+            console.log('click add');
+            burger.classList.add('burger__active');
+            sidemenu.classList.add('sidemenu__active');
+        }else {
+            console.log('click delete');
+            burger.classList.remove('burger__active');
+            sidemenu.classList.remove('sidemenu__active');
+        }
+        
+    });
+
     const timerId = setInterval(countDownTimer, 1000);
+
+    footerArrow.forEach((elem, i) => {
+        elem.addEventListener('click', () => {
+            elem.classList.toggle('rotate');
+            footerList[i].classList.toggle('show');
+        });
+    });
 });
