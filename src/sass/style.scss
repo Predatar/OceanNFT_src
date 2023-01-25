@@ -16,6 +16,15 @@ body {
     background: url('../img/background.png') center center/cover no-repeat;
 }
 
+.swiper {
+    overflow: hidden;
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @import './block/burger';
 @import './block/introduction';
 @import './block/partners';
