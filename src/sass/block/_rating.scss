@@ -185,20 +185,8 @@
             width: 143px;
             display: flex;
             justify-content: space-between;
-            &-hours {
-                display: flex;
-                flex-direction: column;
-                font-family: 'Rajdhani';
-                font-weight: 600;
-                font-size: 23px;
-            }
-            &-minutes {
-                display: flex;
-                flex-direction: column;
-                font-family: 'Rajdhani';
-                font-weight: 600;
-                font-size: 23px;
-            }
+            &-hours,
+            &-minutes,
             &-secundes {
                 display: flex;
                 flex-direction: column;
@@ -242,7 +230,7 @@
 
 @media (min-width: 375px) and (max-width: 425px) {
     .rating {
-        padding: 108px 45px 0 25px;
+        padding: 108px 40px 0;
 
         &__top {
             justify-content: start;
@@ -258,8 +246,6 @@
 
         &__collection {
             margin-top: 32px;
-
-            justify-content: space-between !important;
             &-item {
                 padding: 0;
                 width: 304px;
@@ -367,10 +353,7 @@
 
         &__collection {
             margin-top: 32px;
-            // TODO убрать скрол
-            overflow: scroll !important;
             width: 323px !important;
-            justify-content: space-between !important;
             &-item {
                 margin-right: 5px;
                 &:last-child {
@@ -388,76 +371,77 @@
         &__btn {
             display: block;
         }
-    }
-    .profile-info {
-        width: 100% !important;
-        padding: 25px 19px 18px 21px !important;
-        height: 163px !important;
-        grid-template-columns: 160px 1fr !important;
-        &__title {
-            font-size: 14px !important;
-            line-height: 27px !important;
-        }
 
-        &__profile {
-            width: 110px !important;
-        }
-
-        &__name {
-            font-size: 12px !important;
-            line-height: 27px !important;
-        }
-
-        &__check {
-        }
-
-        &__reserve {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__price {
-            font-size: 8px !important;
-            img {
-                width: 18px;
-                height: 18px;
+        .profile-info {
+            width: 100% !important;
+            padding: 25px 19px 18px 21px !important;
+            height: 163px !important;
+            grid-template-columns: 160px 1fr !important;
+            &__title {
+                font-size: 14px !important;
+                line-height: 27px !important;
             }
-            span {
+
+            &__profile {
+                width: 110px !important;
+            }
+
+            &__name {
+                font-size: 12px !important;
+                line-height: 27px !important;
+            }
+
+            &__check {
+            }
+
+            &__reserve {
                 font-size: 9px !important;
+                line-height: 27px !important;
             }
-        }
 
-        &__timer-text {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
+            &__price {
+                font-size: 8px !important;
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+                span {
+                    font-size: 9px !important;
+                }
+            }
 
-        &__timer {
-            width: 100px !important;
-            &-hours {
-                font-size: 14px !important;
-            }
-            &-minutes {
-                font-size: 14px !important;
-            }
-            &-secundes {
-                font-size: 14px !important;
-            }
-            span {
+            &__timer-text {
                 font-size: 9px !important;
+                line-height: 27px !important;
             }
-        }
 
-        &__btn {
-            margin-top: 18px !important;
-            margin-left: 8px !important;
-            width: 108px !important;
-            height: 34px !important;
-            font-size: 14px !important;
-            padding: 0 !important;
-            &::before {
-                width: 112px !important;
-                height: 38px !important;
+            &__timer {
+                width: 100px !important;
+                &-hours {
+                    font-size: 14px !important;
+                }
+                &-minutes {
+                    font-size: 14px !important;
+                }
+                &-secundes {
+                    font-size: 14px !important;
+                }
+                span {
+                    font-size: 9px !important;
+                }
+            }
+
+            &__btn {
+                margin-top: 18px !important;
+                margin-left: 8px !important;
+                width: 108px !important;
+                height: 34px !important;
+                font-size: 14px !important;
+                padding: 0 !important;
+                &::before {
+                    width: 112px !important;
+                    height: 38px !important;
+                }
             }
         }
     }
@@ -480,8 +464,6 @@
 
         &__collection {
             margin-top: 32px;
-            // TODO убрать скрол
-            overflow: scroll !important;
             width: 323px !important;
             justify-content: space-between !important;
             &-item {
@@ -501,76 +483,77 @@
         &__btn {
             display: block;
         }
-    }
-    .profile-info {
-        width: 100% !important;
-        padding: 25px 19px 18px 21px !important;
-        height: 163px !important;
-        grid-template-columns: 160px 1fr !important;
-        &__title {
-            font-size: 14px !important;
-            line-height: 27px !important;
-        }
 
-        &__profile {
-            width: 110px !important;
-        }
-
-        &__name {
-            font-size: 12px !important;
-            line-height: 27px !important;
-        }
-
-        &__check {
-        }
-
-        &__reserve {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__price {
-            font-size: 8px !important;
-            img {
-                width: 18px;
-                height: 18px;
+        .profile-info {
+            width: 100% !important;
+            padding: 25px 19px 18px 21px !important;
+            height: 163px !important;
+            grid-template-columns: 160px 1fr !important;
+            &__title {
+                font-size: 14px !important;
+                line-height: 27px !important;
             }
-            span {
+
+            &__profile {
+                width: 110px !important;
+            }
+
+            &__name {
+                font-size: 12px !important;
+                line-height: 27px !important;
+            }
+
+            &__check {
+            }
+
+            &__reserve {
                 font-size: 9px !important;
+                line-height: 27px !important;
             }
-        }
 
-        &__timer-text {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
+            &__price {
+                font-size: 8px !important;
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+                span {
+                    font-size: 9px !important;
+                }
+            }
 
-        &__timer {
-            width: 100px !important;
-            &-hours {
-                font-size: 14px !important;
-            }
-            &-minutes {
-                font-size: 14px !important;
-            }
-            &-secundes {
-                font-size: 14px !important;
-            }
-            span {
+            &__timer-text {
                 font-size: 9px !important;
+                line-height: 27px !important;
             }
-        }
 
-        &__btn {
-            margin-top: 18px !important;
-            margin-left: 8px !important;
-            width: 108px !important;
-            height: 34px !important;
-            font-size: 14px !important;
-            padding: 0 !important;
-            &::before {
-                width: 112px !important;
-                height: 38px !important;
+            &__timer {
+                width: 100px !important;
+                &-hours {
+                    font-size: 14px !important;
+                }
+                &-minutes {
+                    font-size: 14px !important;
+                }
+                &-secundes {
+                    font-size: 14px !important;
+                }
+                span {
+                    font-size: 9px !important;
+                }
+            }
+
+            &__btn {
+                margin-top: 18px !important;
+                margin-left: 8px !important;
+                width: 108px !important;
+                height: 34px !important;
+                font-size: 14px !important;
+                padding: 0 !important;
+                &::before {
+                    width: 112px !important;
+                    height: 38px !important;
+                }
             }
         }
     }
@@ -593,8 +576,6 @@
 
         &__collection {
             margin-top: 32px;
-            // TODO убрать скрол
-            overflow: scroll !important;
             width: 646px !important;
             justify-content: space-between !important;
             &-item {
@@ -608,78 +589,6 @@
         &__img {
             img {
                 width: 100%;
-            }
-        }
-    }
-    .profile-info {
-        width: 100% !important;
-        padding: 25px 19px 18px 21px !important;
-        height: 163px !important;
-        grid-template-columns: 160px 1fr !important;
-        &__title {
-            font-size: 14px !important;
-            line-height: 27px !important;
-        }
-
-        &__profile {
-            width: 110px !important;
-        }
-
-        &__name {
-            font-size: 12px !important;
-            line-height: 27px !important;
-        }
-
-        &__check {
-        }
-
-        &__reserve {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__price {
-            font-size: 8px !important;
-            img {
-                width: 18px;
-                height: 18px;
-            }
-            span {
-                font-size: 9px !important;
-            }
-        }
-
-        &__timer-text {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__timer {
-            width: 100px !important;
-            &-hours {
-                font-size: 14px !important;
-            }
-            &-minutes {
-                font-size: 14px !important;
-            }
-            &-secundes {
-                font-size: 14px !important;
-            }
-            span {
-                font-size: 9px !important;
-            }
-        }
-
-        &__btn {
-            margin-top: 18px !important;
-            margin-left: 8px !important;
-            width: 108px !important;
-            height: 34px !important;
-            font-size: 14px !important;
-            padding: 0 !important;
-            &::before {
-                width: 112px !important;
-                height: 38px !important;
             }
         }
     }
@@ -714,78 +623,6 @@
         &__img {
             img {
                 width: 100%;
-            }
-        }
-    }
-    .profile-info {
-        width: 100% !important;
-        padding: 25px 19px 18px 21px !important;
-        height: 163px !important;
-        grid-template-columns: 160px 1fr !important;
-        &__title {
-            font-size: 14px !important;
-            line-height: 27px !important;
-        }
-
-        &__profile {
-            width: 110px !important;
-        }
-
-        &__name {
-            font-size: 12px !important;
-            line-height: 27px !important;
-        }
-
-        &__check {
-        }
-
-        &__reserve {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__price {
-            font-size: 8px !important;
-            img {
-                width: 18px;
-                height: 18px;
-            }
-            span {
-                font-size: 9px !important;
-            }
-        }
-
-        &__timer-text {
-            font-size: 9px !important;
-            line-height: 27px !important;
-        }
-
-        &__timer {
-            width: 100px !important;
-            &-hours {
-                font-size: 14px !important;
-            }
-            &-minutes {
-                font-size: 14px !important;
-            }
-            &-secundes {
-                font-size: 14px !important;
-            }
-            span {
-                font-size: 9px !important;
-            }
-        }
-
-        &__btn {
-            margin-top: 18px !important;
-            margin-left: 8px !important;
-            width: 108px !important;
-            height: 34px !important;
-            font-size: 14px !important;
-            padding: 0 !important;
-            &::before {
-                width: 112px !important;
-                height: 38px !important;
             }
         }
     }

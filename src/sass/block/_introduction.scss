@@ -136,6 +136,7 @@
         padding: 28px 21px 20px 23px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 30px;
         box-sizing: border-box;
         position: absolute;
         right: 0px;
@@ -225,17 +226,17 @@
             &-hours,
             &-minutes,
             &-secundes {
+                font-family: 'Rajdhani';
+                font-weight: 500;
+                font-size: 12px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            span {
                 display: flex;
                 flex-direction: column;
                 font-family: 'Rajdhani';
                 font-weight: 600;
                 font-size: 18px;
-            }
-            span {
-                font-family: 'Rajdhani';
-                font-weight: 500;
-                font-size: 12px;
-                opacity: 0.7;
             }
         }
 
@@ -419,6 +420,70 @@
                 width: 324px;
             }
         }
+
+        .profile-info {
+            width: 324px !important;
+            padding: 27px 20px 20px 22px !important;
+            grid-template-columns: 142px 115px !important;
+            gap: 10px;
+            &__title {
+                width: 142px;
+                font-size: 17px !important;
+            }
+    
+            &__profile {
+                img {
+                    width: 27px !important;
+                    height: 27px !important;
+                }
+            }
+    
+            &__name {
+                font-size: 15px !important;
+            }
+    
+            &__check {
+                img {
+                    width: 12px !important;
+                    height: 13px !important;
+                }
+            }
+    
+            &__reserve {
+                margin-top: 10px !important;
+                font-size: 11px !important;
+                width: 90px;
+            }
+    
+            &__timer-text {
+                font-size: 11px !important;
+            }
+    
+            &__timer {
+                &-hours,
+                &-minutes,
+                &-secundes {
+                    font-size: 11px !important;
+                }
+                span {
+                    font-size: 17px !important;
+                }
+            }
+    
+            &__btn {
+                width: 115px !important;
+                height: 36px !important;
+                font-size: 17px !important;
+                &::before {
+                    width: 119px !important;
+                    height: 40px !important;
+                }
+                img {
+                    width: 23px !important;
+                    height: 9px !important;
+                }
+            }
+        }
     }
     .header {
         &__navigation {
@@ -435,68 +500,6 @@
 
         &__action-profile {
             display: none;
-        }
-    }
-    .profile-info {
-        width: 324px !important;
-        padding: 27px 20px 20px 22px !important;
-        grid-template-columns: 142px 115px !important;
-        &__title {
-            width: 142px;
-            font-size: 17px !important;
-        }
-
-        &__profile {
-            img {
-                width: 27px !important;
-                height: 27px !important;
-            }
-        }
-
-        &__name {
-            font-size: 15px !important;
-        }
-
-        &__check {
-            img {
-                width: 12px !important;
-                height: 13px !important;
-            }
-        }
-
-        &__reserve {
-            margin-top: 10px !important;
-            font-size: 11px !important;
-            width: 90px;
-        }
-
-        &__timer-text {
-            font-size: 11px !important;
-        }
-
-        &__timer {
-            &-hours,
-            &-minutes,
-            &-secundes {
-                font-size: 17px !important;
-            }
-            span {
-                font-size: 11px !important;
-            }
-        }
-
-        &__btn {
-            width: 115px !important;
-            height: 36px !important;
-            font-size: 17px !important;
-            &::before {
-                width: 119px !important;
-                height: 40px !important;
-            }
-            img {
-                width: 23px !important;
-                height: 9px !important;
-            }
         }
     }
 }

@@ -3,6 +3,17 @@ var __webpack_exports__ = {};
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
-
+window.addEventListener('DOMContentLoaded', () => {
+  const footerArrow = document.querySelectorAll('.footer__arrow'),
+    footerList = document.querySelectorAll('.footer__list'),
+    timer_h = document.querySelector('.profile-info__timer-hours');
+  footerArrow.forEach((elem, i) => {
+    elem.addEventListener('click', () => {
+      elem.classList.toggle('rotate');
+      footerList[i].classList.toggle('show');
+    });
+  });
+});
 /******/ })()
 ;
+//# sourceMappingURL=bundle.js.map
