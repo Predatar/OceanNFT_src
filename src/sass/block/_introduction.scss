@@ -225,7 +225,7 @@
             justify-content: space-between;
             &-hours,
             &-minutes,
-            &-secundes {
+            &-seconds {
                 font-family: 'Rajdhani';
                 font-weight: 500;
                 font-size: 12px;
@@ -430,46 +430,46 @@
                 width: 142px;
                 font-size: 17px !important;
             }
-    
+
             &__profile {
                 img {
                     width: 27px !important;
                     height: 27px !important;
                 }
             }
-    
+
             &__name {
                 font-size: 15px !important;
             }
-    
+
             &__check {
                 img {
                     width: 12px !important;
                     height: 13px !important;
                 }
             }
-    
+
             &__reserve {
                 margin-top: 10px !important;
                 font-size: 11px !important;
                 width: 90px;
             }
-    
+
             &__timer-text {
                 font-size: 11px !important;
             }
-    
+
             &__timer {
                 &-hours,
                 &-minutes,
-                &-secundes {
+                &-seconds {
                     font-size: 11px !important;
                 }
                 span {
                     font-size: 17px !important;
                 }
             }
-    
+
             &__btn {
                 width: 115px !important;
                 height: 36px !important;
