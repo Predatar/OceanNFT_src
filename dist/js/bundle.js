@@ -12926,13 +12926,14 @@ window.addEventListener('DOMContentLoaded', () => {
     timer_m = document.querySelectorAll('.profile-info__timer-minutes span'),
     timer_s = document.querySelectorAll('.profile-info__timer-seconds span'),
     burger = document.querySelector('.burger'),
-    sidemenu = document.querySelector('.sidemenu');
+    sidemenu = document.querySelector('.sidemenu'),
+    body = document.body;
   const deadline = new Date('2023', '01', '27');
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     direction: 'horizontal',
     slidesPerView: 3,
     enabled: false,
-    spaceBetween: 35,
+    spaceBetween: 25,
     breakpoints: {
       375: {
         slidesPerView: 1,
@@ -12946,7 +12947,7 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         enabled: true
       },
-      769: {
+      740: {
         slidesPerView: 2,
         enabled: true,
         grabCursor: true
@@ -12985,10 +12986,12 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log('click add');
       burger.classList.add('burger__active');
       sidemenu.classList.add('sidemenu__active');
+      body.classList.add('lock');
     } else {
       console.log('click delete');
       burger.classList.remove('burger__active');
       sidemenu.classList.remove('sidemenu__active');
+      body.classList.remove('lock');
     }
   });
   const timerId = setInterval(countDownTimer, 1000);

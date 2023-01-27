@@ -37,7 +37,6 @@
         margin-top: 47px;
         width: 100%;
         display: flex;
-        justify-content: space-around;
     }
 
     &__collection-item {
@@ -230,7 +229,8 @@
 
 @media (min-width: 375px) and (max-width: 425px) {
     .rating {
-        padding: 108px 40px 0;
+        padding: 108px 0 0 25px;
+        overflow: hidden;
 
         &__top {
             justify-content: start;
@@ -246,9 +246,10 @@
 
         &__collection {
             margin-top: 32px;
+            width: auto;
             &-item {
                 padding: 0;
-                width: 304px;
+                width: 304px !important;
             }
         }
 
@@ -260,6 +261,7 @@
 
         &__btn {
             display: block;
+            margin-left: 95px;
         }
     }
     .profile-info {
@@ -334,10 +336,14 @@
             }
         }
     }
+    .swiper {
+        margin-left: 0 !important;
+    }
 }
 @media (min-width: 426px) and (max-width: 575px) {
     .rating {
         padding: 90px 27px 0 25px !important;
+        overflow: hidden;
 
         &__top {
             justify-content: start;
@@ -440,9 +446,10 @@
         }
     }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 739px) {
     .rating {
         padding: 90px 50px 0 !important;
+        overflow: hidden;
 
         &__top {
             justify-content: start;
@@ -546,9 +553,10 @@
         }
     }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 740px) and (max-width: 1024px) {
     .rating {
         padding: 90px 50px 0 !important;
+        overflow: hidden;
 
         &__top {
             justify-content: start;
@@ -582,7 +590,7 @@
             width: 100% !important;
             padding: 25px 19px 18px 21px !important;
             height: 163px !important;
-            grid-template-columns: 160px 1fr !important;
+            grid-template-columns: 138px 1fr !important;
             &__title {
                 font-size: 14px !important;
                 line-height: 27px !important;
@@ -655,6 +663,7 @@
 @media (min-width: 1025px) and (max-width: 1484px) {
     .rating {
         padding: 90px 50px 0 !important;
+        overflow: hidden;
 
         &__top-text {
             font-size: 16px;
