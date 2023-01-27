@@ -27,6 +27,8 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
             font-family: 'Orbitron';
             font-weight: 700;
             font-size: 27px;
@@ -39,8 +41,16 @@
                     rgba(60, 121, 213, 0.3) 98.81%
                 )
                 1;
-            span {
-                opacity: 0.5;
+            &__active {
+                background: linear-gradient(
+                        92.23deg,
+                        #ff56f6 21.43%,
+                        #b936ee 50.63%,
+                        #3bace2 100%,
+                        #406aff 117.04%
+                    )
+                    center center/cover no-repeat;
+                color: rgba(255, 255, 255, 1);
             }
             &:hover {
                 border-radius: 2px;
@@ -52,9 +62,7 @@
                         #406aff 117.04%
                     )
                     center center/cover no-repeat;
-                span {
-                    opacity: 1;
-                }
+                color: rgba(255, 255, 255, 1);
             }
         }
     }

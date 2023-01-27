@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
         sidemenu = document.querySelector('.sidemenu'),
         body = document.body,
         list = document.querySelector('.sellers__list'),
-        span = document.querySelector('.sellers__title span');
+        span = document.querySelector('.sellers__sort span'),
+        categoryList = document.querySelectorAll('.category__group-item');
 
     const deadline = new Date('2023', '01', '27');
     const swiper = new Swiper('.swiper', {
@@ -95,5 +96,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
     list.addEventListener('click', e => {
         span.textContent = e.target.getAttribute('data-tag');
+    })
+
+
+    categoryList.forEach(elem => {
+        elem.addEventListener('click', (e) => {
+            categoryList.forEach(element => {
+                element.classList.remove('category__group-item__active');
+            });
+            e.target.classList.add('category__group-item__active');
+        })
     })
 });
