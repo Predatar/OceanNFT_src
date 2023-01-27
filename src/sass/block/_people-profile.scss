@@ -1,6 +1,6 @@
 .people-profile {
     padding: 160px 106px 0 109px;
-    display: none !important;
+    overflow: hidden;
 
     &__top {
         display: flex;
@@ -205,7 +205,8 @@
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .people-profile {
-        padding: 110px 40px 0;
+        padding: 110px 0 0 25px;
+
         &__top {
             justify-content: start;
         }
@@ -221,11 +222,11 @@
 
         &__group {
             margin-top: 30px;
-            justify-content: center;
+            width: 304px;
         }
 
         &__group-item {
-            width: 303px;
+            width: 304px !important;
             height: 391px;
         }
 
@@ -295,7 +296,7 @@
 }
 @media (min-width: 426px) and (max-width: 575px) {
     .people-profile {
-        padding: 110px 40px 0;
+        padding: 110px 0 0 25px;
         &__top {
             justify-content: start;
         }
@@ -311,8 +312,7 @@
 
         &__group {
             margin-top: 30px;
-            width: 346px;
-            justify-content: center;
+            width: 303px;
         }
 
         &__group-item {
@@ -402,7 +402,7 @@
 
         &__group {
             margin-top: 30px;
-            width: 346px;
+            width: 304px;
             justify-content: center;
         }
 
