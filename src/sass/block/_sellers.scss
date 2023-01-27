@@ -2,24 +2,65 @@
     padding: 160px 110px 0;
 
     &__title {
+        display: flex;
+        justify-content: center;
         font-family: 'Orbitron';
         font-weight: 700;
         font-size: 27px;
         text-align: center;
     }
 
-    select {
-        background: transparent;
-        border: none;
-        outline: 0;
-        color: #FF56F6;
-        option {
-            border: none;
-            outline: 0;
-            background: #211147;
-            color: #FF56F6;
-            &:focus {
-                color: #FF56F6;
+    &__sort {
+        width: 121px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 6px;
+        position: relative;
+        &:hover {
+            img {
+                transform: rotate(180deg);
+            }
+            .sellers__list {
+                height: auto;
+                cursor: pointer;
+                overflow: visible;
+                border: 2px solid rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        span {
+            width: 93px;
+            color: #ff56f6;
+            cursor: pointer;
+        }
+        img {
+            margin-left: 5px;
+            width: 15px;
+            height: 8px;
+            transition: all 0.5s;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        top: 100%;
+        left: 0;
+        background: #211147;
+        z-index: 10;
+        &-item {
+            width: 100%;
+            color: #ff56f6;
+            padding: 5px 0;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+                background: #331a6b;
             }
         }
     }
@@ -179,6 +220,11 @@
             font-size: 19px;
         }
 
+        &__sort {
+            margin-left: 0;
+            width: 98px;
+        }
+
         &__subtitle {
             width: 100%;
             font-size: 14px;
@@ -241,6 +287,11 @@
 
         &__title {
             font-size: 19px;
+        }
+
+        &__sort {
+            margin-left: 0;
+            width: 98px;
         }
 
         &__subtitle {
@@ -307,6 +358,11 @@
             font-size: 19px;
         }
 
+        &__sort {
+            margin-left: 0;
+            width: 98px;
+        }
+
         &__subtitle {
             width: 100%;
             font-size: 14px;
@@ -369,6 +425,11 @@
 
         &__title {
             font-size: 19px;
+        }
+
+        &__sort {
+            margin-left: 0;
+            width: 98px;
         }
 
         &__subtitle {
@@ -434,6 +495,11 @@
 
         &__title {
             font-size: 19px;
+        }
+
+        &__sort {
+            width: 96px;
+            margin-left: 0;
         }
 
         &__subtitle {

@@ -12927,7 +12927,9 @@ window.addEventListener('DOMContentLoaded', () => {
     timer_s = document.querySelectorAll('.profile-info__timer-seconds span'),
     burger = document.querySelector('.burger'),
     sidemenu = document.querySelector('.sidemenu'),
-    body = document.body;
+    body = document.body,
+    list = document.querySelector('.sellers__list'),
+    span = document.querySelector('.sellers__title span');
   const deadline = new Date('2023', '01', '27');
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     direction: 'horizontal',
@@ -13000,6 +13002,9 @@ window.addEventListener('DOMContentLoaded', () => {
       elem.classList.toggle('rotate');
       footerList[i].classList.toggle('show');
     });
+  });
+  list.addEventListener('click', e => {
+    span.textContent = e.target.getAttribute('data-tag');
   });
 });
 })();

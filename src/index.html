@@ -289,11 +289,17 @@
         <button class="people-profile__btn-exp">Explore <img src="./icons/arrow.svg" alt="arrow"></button>
     </section>
     <section class="sellers">
-        <div class="sellers__title">Top Sellers this <select>
-                <option value="day">Day</option>
-                <option value="week">Week</option>
-                <option value="month" selected>Month</option>
-            </select></div>
+        <div class="sellers__title">Top Sellers this <div class="sellers__sort">
+                <span>Month </span>
+                <img src="./icons/arrow_down.svg" alt="arrow_down">
+                <div class="sellers__list">
+                    <div data-tag="Day" class="sellers__list-item">Day</div>
+                    <div data-tag="Week" class="sellers__list-item">Week</div>
+                    <div data-tag="Month" class="sellers__list-item">Month</div>
+                </div>
+            </div>
+
+        </div>
         <div class="sellers__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
             officia consequat duis enim minim mollit.</div>
         <div class="sellers__group">
