@@ -187,6 +187,106 @@
     transform: rotate(180deg);
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .footer {
+        padding: 0 25px 97px;
+
+        &__wrapper {
+            padding: 30px 0 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 100%;
+        }
+
+        &__logo {
+            &-title {
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__social {
+            margin-bottom: 50px;
+            &-item {
+            }
+        }
+
+        &__arrow {
+            display: block;
+        }
+
+        &__market-place {
+            width: 100%;
+        }
+
+        &__collectibles {
+            width: 100%;
+        }
+
+        &__support {
+            width: 100%;
+        }
+
+        &__legal {
+            width: 100%;
+        }
+
+        &__follow-us {
+            width: 100%;
+        }
+
+        &__list {
+            align-items: center;
+            overflow: hidden;
+            height: 2px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__license {
+            margin: 0;
+            margin-top: 22px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        &__copyright {
+            margin-top: 37px;
+            text-align: center;
+        }
+
+        &__support-info {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__terms {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__policy {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__sitemap {
+            display: none;
+        }
+
+        .divider {
+            &__dissable {
+                display: none;
+            }
+        }
+    }
+}
 @media (min-width: 375px) and (max-width: 425px) {
     .footer {
         padding: 0 25px 97px;

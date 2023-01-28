@@ -70,6 +70,55 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .subscribe {
+        flex-direction: column-reverse;
+        padding: 207px 25px 108px;
+
+        &__img {
+            margin-top: 108px;
+            width: auto;
+            height: auto;
+            img {
+                height: 380px;
+            }
+        }
+
+        &__wrapper {
+            width: auto;
+            margin-left: 0;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 18px;
+            font-size: 13px;
+        }
+
+        &__form {
+            margin-top: 33px;
+        }
+
+        &__input {
+            font-size: 10px;
+            padding: 9px 12px;
+        }
+
+        &__btn {
+            width: 95px;
+            height: 32px;
+            &::before {
+                width: 99px;
+                height: 36px;
+            }
+        }
+    }
+}
 @media (min-width: 375px) and (max-width: 425px) {
     .subscribe {
         flex-direction: column-reverse;

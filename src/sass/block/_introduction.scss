@@ -3,13 +3,21 @@
 
     &__content {
         padding-top: 105px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 850px 411px;
+        grid-template-rows: 530px 74px;
         justify-content: space-between;
-        flex-wrap: wrap;
+        gap: 102px 0;
+        &-item {
+            position: relative;
+            &:last-child {
+                grid-column: 2/3;
+            }
+        }
     }
 
     &__title {
-        width: 850px;
+        width: 100%;
         height: 181px;
         font-family: 'League Spartan';
         font-weight: 500;
@@ -533,6 +541,16 @@
 
         &__content {
             padding-top: 45px;
+            grid-template-columns: 358px;
+            grid-template-rows: 1fr 0fr 1fr;
+            justify-items: center;
+            gap: 50px 0;
+            &-item {
+                width: 358px;
+                &:nth-child(2){
+                    grid-row: 3/4;
+                }
+            }
         }
 
         &__title {
@@ -685,7 +703,16 @@
 
         &__content {
             padding-top: 30px;
-            justify-content: center;
+            grid-template-columns: 358px;
+            grid-template-rows: 1fr 0fr 1fr;
+            justify-items: center;
+            gap: 50px 0;
+            &-item {
+                width: 358px;
+                &:nth-child(2){
+                    grid-row: 3/4;
+                }
+            }
         }
 
         &__title {
@@ -743,6 +770,9 @@
 
         &__img {
             margin-top: 30px;
+            img {
+                width: 358px;
+            }
         }
     }
     .header {
@@ -770,13 +800,21 @@
         }
     }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 834px) {
     .introduction {
         padding: 27px 34px;
 
         &__content {
             padding-top: 30px;
-            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 0fr 1fr;
+            justify-items: center;
+            gap: 50px 0;
+            &-item {
+                &:nth-child(2){
+                    grid-row: 3/4;
+                }
+            }
         }
 
         &__title {
@@ -840,17 +878,18 @@
         }
     }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 835px) and (max-width: 1224px) {
     .introduction {
         padding: 27px 34px;
 
         &__content {
             padding-top: 30px;
-            flex-wrap: nowrap;
+            grid-template-columns: 400px 350px;
+            gap: 54px 0;
         }
 
         &__title {
-            width: 360px;
+            width: 400px;
             height: auto;
             font-size: 48px;
         }
@@ -920,13 +959,13 @@
         }
     }
 }
-@media (min-width: 1025px) and (max-width: 1484px) {
+@media (min-width: 1225px) and (max-width: 1484px) {
     .introduction {
         padding: 27px 34px;
 
         &__content {
             padding-top: 30px;
-            flex-wrap: nowrap;
+            grid-template-columns: 728px 411px;
         }
 
         &__title {
