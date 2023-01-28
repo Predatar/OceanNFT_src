@@ -88,6 +88,14 @@
     }
     &__img {
         grid-column: 3/4;
+
+        img {
+            display: none;
+            width: 436px;
+        }
+        &__active {
+            display: block !important;
+        }
     }
 }
 
@@ -230,7 +238,9 @@
             margin: 0 auto;
             grid-column: 2/3;
             img {
-                height: 100%;
+                object-fit: contain;
+                width: 100%;
+                max-height: 100%;
             }
         }
     }
@@ -277,6 +287,7 @@
             margin: 0 auto;
             grid-column: 2/3;
             img {
+                object-fit: contain;
                 height: 100%;
             }
         }
@@ -284,6 +295,7 @@
 }
 @media (min-width: 1025px) and (max-width: 1484px) {
     .category {
+        padding: 90px 100px 0;
         grid-template-columns: 580px minmax(0, 1fr) 296px;
         &__top {
             font-size: 24px;

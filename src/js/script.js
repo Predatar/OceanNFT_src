@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
         body = document.body,
         list = document.querySelector('.sellers__list'),
         span = document.querySelector('.sellers__sort span'),
-        categoryList = document.querySelectorAll('.category__group-item');
+        categoryList = document.querySelectorAll('.category__group-item'),
+        imgList = document.querySelectorAll('.category__img img');
 
     const deadline = new Date('2023', '01', '27');
     const swiper = new Swiper('.swiper', {
@@ -71,18 +72,17 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     burger.addEventListener('click', () => {
-        if(document.querySelector('.burger input').checked){
+        if (document.querySelector('.burger input').checked) {
             console.log('click add');
             burger.classList.add('burger__active');
             sidemenu.classList.add('sidemenu__active');
             body.classList.add('lock');
-        }else {
+        } else {
             console.log('click delete');
             burger.classList.remove('burger__active');
             sidemenu.classList.remove('sidemenu__active');
             body.classList.remove('lock');
         }
-        
     });
 
     const timerId = setInterval(countDownTimer, 1000);
@@ -96,15 +96,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     list.addEventListener('click', e => {
         span.textContent = e.target.getAttribute('data-tag');
-    })
+    });
 
-
-    categoryList.forEach(elem => {
-        elem.addEventListener('click', (e) => {
+    categoryList.forEach((elem, i) => {
+        elem.addEventListener('click', e => {
             categoryList.forEach(element => {
                 element.classList.remove('category__group-item__active');
             });
             e.target.classList.add('category__group-item__active');
-        })
-    })
+            imgList.forEach(elem => {
+                elem.classList.remove('category__img__active');
+            })
+            imgList[i].classList.add('category__img__active');
+        });
+    });
 });
