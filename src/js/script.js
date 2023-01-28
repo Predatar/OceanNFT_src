@@ -21,6 +21,10 @@ window.addEventListener('DOMContentLoaded', () => {
         enabled: false,
         spaceBetween: 25,
         breakpoints: {
+            320: {
+                slidesPerView: 1,
+                enabled: true
+            },
             375: {
                 slidesPerView: 1,
                 enabled: true
@@ -94,9 +98,9 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    list.addEventListener('click', e => {
+    /* list.addEventListener('click', e => {
         span.textContent = e.target.getAttribute('data-tag');
-    });
+    }); */
 
     categoryList.forEach((elem, i) => {
         elem.addEventListener('click', e => {

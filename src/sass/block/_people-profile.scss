@@ -203,6 +203,103 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 374px) {
+    .people-profile {
+        padding: 110px 0 0 25px;
+
+        &__top {
+            justify-content: start;
+        }
+
+        &__top-text {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__top-link {
+            display: none;
+        }
+
+        &__group {
+            margin-top: 30px;
+            width: 252px;
+        }
+
+        &__group-item {
+            width: 252px !important;
+            height: 391px;
+        }
+
+        &__logo {
+            height: 142px;
+            img {
+                top: 33%;
+                width: 112px;
+                height: 112px;
+            }
+        }
+
+        &__info {
+            padding: 52px 27px 28px;
+        }
+
+        &__name {
+            font-size: 17px;
+        }
+
+        &__link {
+            font-size: 14px;
+            img {
+                width: 11px;
+                height: 12px;
+            }
+        }
+
+        &__data {
+            margin-top: 5px;
+        }
+
+        &__folowers {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__following {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__artworks {
+            font-size: 22px;
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &__btn {
+            margin-top: 20px;
+            width: 162px;
+            height: 36px;
+            &::before {
+                width: 166px;
+                height: 40px;
+            }
+            &-exp {
+                display: block;
+            }
+        }
+        .swiper {
+            margin-left: 0;
+            &-wrapper {
+                width: 252px;
+            }
+        }
+    }
+}
 @media (min-width: 375px) and (max-width: 425px) {
     .people-profile {
         padding: 110px 0 0 25px;

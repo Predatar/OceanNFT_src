@@ -351,6 +351,182 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .introduction {
+        padding: 27px 30px;
+
+        &__content {
+            padding-top: 45px;
+        }
+
+        &__title {
+            width: 252px;
+            height: 161px;
+            font-size: 36px;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            width: 252px;
+            font-size: 14px;
+        }
+
+        &__action {
+            margin-top: 40px;
+            width: 252px;
+        }
+
+        &__btn {
+            width: 123px;
+            height: 34px;
+            font-size: 12px;
+            padding: 0;
+            &::before {
+                width: 200px;
+                height: 200px;
+            }
+            &::after {
+                width: 110px;
+                height: 30px;
+            }
+            img {
+                margin-left: 4px;
+                width: 27px;
+                height: 8px;
+            }
+        }
+
+        &__action-link {
+            font-size: 14px;
+            text-align: right;
+        }
+
+        &__group-info {
+            margin-top: 40px;
+            width: 100%;
+            height: 43px;
+        }
+
+        &__info {
+            font-size: 18px;
+            border: none;
+            &:nth-child(1) {
+                padding-right: 10px;
+            }
+            &:nth-child(2) {
+                padding-left: 30px;
+                padding-right: 12px;
+            }
+            &:nth-child(3) {
+                padding-left: 36px;
+                border: none;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+
+        &__img {
+            margin-top: 58px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        .profile-info {
+            width: 100% !important;
+            height: 150px;
+            padding: 15px !important;
+            grid-template-columns: 100px 115px !important;
+            justify-content: space-between;
+            gap: 0;
+            &__title {
+                width: 142px;
+                font-size: 14px !important;
+            }
+
+            &__profile {
+                width: 100%;
+                justify-content: start;
+                img {
+                    width: 20px !important;
+                    height: 20px !important;
+                }
+            }
+
+            &__name {
+                font-size: 12px !important;
+            }
+
+            &__check {
+                img {
+                    width: 12px !important;
+                    height: 13px !important;
+                }
+            }
+
+            &__reserve {
+                margin-top: 10px !important;
+                font-size: 11px !important;
+                width: 90px;
+            }
+
+            &__timer-text {
+                font-size: 11px !important;
+            }
+
+            &__timer {
+                &-hours,
+                &-minutes,
+                &-seconds {
+                    font-size: 11px !important;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                span {
+                    font-size: 17px !important;
+                }
+            }
+
+            &__btn {
+                width: 105px !important;
+                height: 36px !important;
+                font-size: 15px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::before {
+                    width: 109px !important;
+                    height: 40px !important;
+                }
+                img {
+                    margin-left: 5px;
+                    width: 20px !important;
+                    height: 9px !important;
+                }
+            }
+        }
+    }
+    .header {
+        &__navigation {
+            display: none;
+        }
+
+        &__action {
+            justify-content: end;
+        }
+
+        &__action-cart {
+            display: none;
+        }
+
+        &__action-profile {
+            display: none;
+        }
+    }
+}
 @media (min-width: 375px) and (max-width: 425px) {
     .introduction {
         padding: 27px 34px;
