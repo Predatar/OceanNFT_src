@@ -365,6 +365,16 @@
 
         &__content {
             padding-top: 45px;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 0fr 1fr;
+            justify-items: center;
+            gap: 50px 0;
+            &-item {
+                width: 100%;
+                &:nth-child(2){
+                    grid-row: 3/4;
+                }
+            }
         }
 
         &__title {
@@ -541,12 +551,12 @@
 
         &__content {
             padding-top: 45px;
-            grid-template-columns: 358px;
+            grid-template-columns: 100%;
             grid-template-rows: 1fr 0fr 1fr;
             justify-items: center;
             gap: 50px 0;
             &-item {
-                width: 358px;
+                width: 100%;
                 &:nth-child(2){
                     grid-row: 3/4;
                 }
@@ -611,12 +621,12 @@
         &__img {
             margin-top: 58px;
             img {
-                width: 324px;
+                width: 100%;
             }
         }
 
         .profile-info {
-            width: 324px !important;
+            width: 307px !important;
             padding: 27px 20px 20px 22px !important;
             grid-template-columns: 142px 115px !important;
             gap: 10px;

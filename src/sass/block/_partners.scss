@@ -14,8 +14,9 @@
 }
 @media (min-width: 320px) and (max-width: 374px) {
     .partners {
-        padding: 0 30px;
+        padding: 0;
         justify-content: flex-start;
+        grid-row: 2/3;
         &__partner {
             padding: 5px 0;
             img {
